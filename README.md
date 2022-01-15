@@ -1,90 +1,124 @@
-# Learn git working process.
+<sup>__Revision: 2__</sup>
+# Git and Markdown
+---
 
-**This git repo is only for learning purposes. Source codes in this repo is just for demo of any project structure.**
+**This git repo is only for learning purposes. Source codes in this repo is just mimic of a project structure.**
 
-Here are some markdown syntax for writing a **README.md** file. A good readme file helps a developer to understand. what problems you have solved or aim to solve using your project. and he can integrate your project to address same issue.
+Here are some markdown syntax for writing a **README** file for your project. A good readme file helps a developer to understand. what problems you have solved or aim to solve using your project. and how can he integrate your project to address same issue?
 
-Simple Text:
-    Italic:     _Hello_     \_Hello\_
-    Bold:       **Hello**   \*\*Hello\*\*
-    Bold and Italic:    **_Hello_**     \*\*\_Hello\_\*\*
+## Text
+You can use text in 3 styles. **Bold**, _Italic_ or **_Bold Italic_** togethor. We have demostrated all three types of style with their syntaxes.
 
-**Headings**
-Heading One:    \# Hello
+_I am italic_
+```
+_I am italic_
+```
+**I am bold**
+```
+**I am bold**
+```
+**_I am italic and bold._**
+```
+**_I am italic and bold_**
+```
+
+## Headings
+There are six sizes of headings.
 # Hello Heading One
-Heading Two:    \#\# Hello
+```
+# Hello Heading One
+```
 ## Hello Heading Two
-Heading Three:    \#\#\# Hello
+```
+## Hello Heading Two
+```
 ### Hello Heading Three
-Heading Four:    \#\#\#\# Hello
+```
+### Hello Heading Three
+```
 #### Hello Heading Four
-Heading Five:    \#\#\#\#\# Hello
+```
+#### Hello Heading Four
+```
 ##### Hello Heading Five
-Heading Six:    \#\#\#\#\#\#\# Hello
+```
+##### Hello Heading Five
+```
 ###### Hello Heading Six
+```
+###### Hello Heading Six
+```
 
+## Links
 
-**Links**
-##### _inline links_
-\[I'm Google, Bi**h\]\(www.google.com\)
+Links are very useful to show any external thing inside a markdown file. There are two types of link.
+* Inline link
+* Reference link
 
-[I'm Google, Bi**h](www.google.com)
+#### 1. Inline link
 
-##### _reference link_
-\[I hate, Goolgle\]\[legend-bing\]
+<sup>Using inline link you can link text to url just in single line.</sup>
 
-\[legend-bing\]: www.bing.com
+I am google. You can [visit](https://www.google.com) me to search the internet
 
-[I hate, Goolgle.][legend-bing]
+```
+[visit](https://www.google.com)
+```
 
-[legend-bing]: www.bing.com
+#### 2. Reference link
 
-##### _remote images_
-\!\[Label\]\(url-to-image\)
+<sup>Using reference links, You can reuse a single url multiple times in a file after defining it once.</sup>
+
+I hate [google][url-google], I like [bing][url-bing].
+
+[url-google]: www.google.com
+[url-bing]: www.bing.com
+
+```
+[google][url-google]
+
+[url-google]: www.google.com
+```
+
+## External Image
+You can include external image in your markdown file to make more attentive you rendered file.
 
 ![It's Moooozilla baby](https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg)
 
-**Blockquotes**
-\> "Once a Robo said,'We will replace humans in future.'
-    Other Robo,'But we can't satisfiy them in the bed.'"
+```
+![Mozilla Foundation](https://www.mozilla.org/media/protocol/img/logos/mozilla/logo-word-hor.e20791bb4dd4.svg)
+```
 
-> "Once a Robo said,'We will replace humans in future.'
-Other Robo,'But we can't satisfiy them in the bed.'"
+## Blockquotes
+Blockquotes are useful for quoting a text from someone. You can also use it for a small notes.
 
-**Lists**
-#### _Unordered List_
-\* Google
-    \* GCloud
-\* Bing
-    \* You Kidding me.
-\* Yahoo
-    \* My owner doesn't own cloud services.
-\* Duckduckgo
-    \* You guys know about clouds
+> _"There are years that ask questions and years that answer" - Zora Neale Hurston_
+
+```
+> _"There are years that ask questions and years that answer" - Zora Neale Hurston_
+```
+
+## Lists
+There are two types of list and may be you already know them.
+* Unorderd list
+* Ordered list
+
+#### 1. Unordered List
 
 * Google
 * Bing
 * Yahoo
 * Duckduckgo
 
-#### _Ordered List_
-\1. Goodle
-\2. Bing
-\3. Yahoo
-\4. Duckduckgo
+#### 2. Ordered List
 
 1. Google
 2. Bing
 3. Yahoo
 4. Duckduckgo
 
-**Source Code**
-
-\`\`\`sh
-mkdir project-metaworse
-cd project-metaworse
-echo "Work under process..."
-\`\`\`
+## Code
+You can show snippet code of your project for a quick reference. Code snippet can be display using backticks. ( ` ). Single and double backtickes are used for single line code snippets and triple backtickes are used for multiline code snippets.
 
 ```sh
 mkdir project-metaworse
@@ -92,10 +126,30 @@ cd project-metaworse
 echo "Work under process..."
 ```
 
-**Table**
+```
+    ```sh
+    mkdir project-metaworse
+    cd project-metaworse
+    echo "work under process."
+    ```
+```
+
+## Table
+Table can demostrate your data in structured way and help other to understand quickly.
+
 | S.No | Search Engines |
 | ---- | -------------- |
 | 1. | Google |
 | 2. | Bing |
 | 3. | Yahoo |
 | 4. | Duckduckgo |
+
+```
+
+| S.No | Search Engines |
+| ---- | -------------- |
+| 1. | Google |
+| 2. | Bing |
+| 3. | Yahoo |
+| 4. | Duckduckgo |
+```
