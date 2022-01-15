@@ -1,12 +1,12 @@
 <sup>__Revision: 2__</sup>
+
 # Git and Markdown
----
 
 **This git repo is only for learning purposes. Source codes in this repo is just mimic of a project structure.**
 
 Here are some markdown syntax for writing a **README** file for your project. A good readme file helps a developer to understand. what problems you have solved or aim to solve using your project. and how can he integrate your project to address same issue?
 
-## Text
+## Text Formatting
 You can use text in 3 styles. **Bold**, _Italic_ or **_Bold Italic_** togethor. We have demostrated all three types of style with their syntaxes.
 
 _I am italic_
@@ -23,6 +23,7 @@ _I am italic_
 ```
 
 ## Headings
+
 There are six sizes of headings.
 # Hello Heading One
 ```
@@ -104,6 +105,7 @@ There are two types of list and may be you already know them.
 * Ordered list
 
 #### 1. Unordered List
+<sup>An unordered list can be created by using dashes (-), asterisks (*), or plus sign (+) at the start of line.</sup>
 
 * Google
 * Bing
@@ -111,7 +113,7 @@ There are two types of list and may be you already know them.
 * Duckduckgo
 
 #### 2. Ordered List
-
+<sup>List item starting with number and followed by dot (.) can cause issues but we have escape charater to deal with such situations.</sup>
 1. Google
 2. Bing
 3. Yahoo
@@ -152,4 +154,21 @@ Table can demostrate your data in structured way and help other to understand qu
 | 2. | Bing |
 | 3. | Yahoo |
 | 4. | Duckduckgo |
+```
+
+## Horizontal lines
+Horizontal line can be used as seperator for title and body in a markdown file. Horizontal line can be created using three or more asterisks (***), dashes (---), or underscores (___) in a line.
+***
+```
+***
+```
+
+## URLs and Emails
+Direct links can be created for a url or an email. It can help quickly open program related to the link.
+
+<https://www.google.com><br/>
+<noreply@abc.xyz>
+```
+<https://www.google.com>
+<noreply@abc.xyz>
 ```
