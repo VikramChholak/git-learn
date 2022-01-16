@@ -17,3 +17,8 @@ void main(){
 int adder(int Num0,int Num1) {
     return Num0+Num1;
 }
+
+// Subtracter added
+int sub(int num0, int num1) {
+    return num0-num1;
+}
